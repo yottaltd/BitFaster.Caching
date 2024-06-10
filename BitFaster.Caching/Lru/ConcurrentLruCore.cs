@@ -186,7 +186,7 @@ namespace BitFaster.Caching.Lru
             return true;
         }
 
-        private bool TryAdd(K key, V value)
+        public bool TryAdd(K key, V value)
         {
             var newItem = this.itemPolicy.CreateItem(key, value);
 
